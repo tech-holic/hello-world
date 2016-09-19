@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1473821593 source:d:\techolic\program\hello-world\c07timer\main.cpp
+	<iostream>
+	<ctime>
+	<time.h>
+

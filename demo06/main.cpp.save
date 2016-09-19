@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+void select_sort(int array[],int n);
+void swap(int &x,int &y)
+{
+    int t;
+    t=x;
+    x=y;
+    y=t;
+} //函数声明
+
+int main( )
+{
+
+   int a[10],i;
+   cout<<"enter the originl array："<<endl;
+   for(i=0;i<10;i++)  //输入10个数
+      a[i]=9-i;
+   cout<<endl;
+   select_sort(a,10);//函数调用,数组名作实参
+   cout<<"the sorted array："<<endl;
+   for(i=0;i<10;i++) //输出10个已排好序的数
+      cout<<a[i]<<"  ";
+   cout<<endl;
+   return 0;
+}
+void select_sort(int array[],int n)  //形参array是数组名
+{
+   int i,j,k;
+   for(i=0;i<n-1;i++)
+   {
+     // k=i;
+      for(j=i+1;j<n;j++)
+         if(array[j]<array[i]) //k=j;
+      swap(array[j],array[i]);//t=array[k];array[k]=array[i];array[i]=t;
+   }
+}

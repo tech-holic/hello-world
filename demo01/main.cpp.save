@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int countone(int x)
+{
+    int countx=0;
+    while(x){
+        count++;
+        x=x&(x-1);
+    }
+    return countx;
+}
+
+int main()
+{
+    int I,r,m;
+    int num=0;
+    cin>>I>>r>>m;
+    int i=I;
+    for(i;i<=r;i++;)
+    {
+        if(countone(i)==m)
+            num++;
+
+    }
+    if(num==0)
+        cout << "-1" << endl;
+    else 
+        cout<<num
+    return 0;
+}
