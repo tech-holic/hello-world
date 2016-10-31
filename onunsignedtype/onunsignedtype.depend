@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1474712154 source:d:\techolic\program\hello-world\onunsignedtype\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

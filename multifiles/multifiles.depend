@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1474620709 source:d:\techolic\program\hello-world\multifiles\main.c
+	<stdio.h>
+	<stdlib.h>
+	"aa.c"
+
+1474620792 d:\techolic\program\hello-world\multifiles\aa.c
+

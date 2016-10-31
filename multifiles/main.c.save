@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "aa.c"
+int main()
+{
+    double c=2.0;
+    int i;
+    extern char a; // extern variable must be declared before use
+    printf("%c ", a);
+    (void)msg();
+
+    for(i=0;i<10;i++)
+        {printf("%d",(int)(c+0.1*i));
+    }
+        
+    return 0;
+}

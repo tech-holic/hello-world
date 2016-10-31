@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1476327445 source:d:\techolic\program\hello-world\montacarlo\main.cpp
+	<stdio.h>
+	<stdlib.h>
+

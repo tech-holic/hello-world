@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1475460111 source:d:\techolic\program\hello-world\demo1003\main.cpp
+	<iostream>
+	<stdio.h>
+

@@ -1,0 +1,34 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+bool issquare(int x)
+{
+    float a = sqrt(x);
+    if(int(a)*int(a)==x)
+        return true;
+    else
+        return false;
+}
+int main()
+{
+    int M,TMP,i;
+    int N=0;
+    cin>>M;
+    TMP=int(sqrt(M/2));
+    if(issquare(M))
+        N+=4;
+    if(issquare(M/2))
+        {
+            N+=4;
+            TMP-=1;
+        }
+    for(i=1;i<=TMP;i++)
+    {
+        if(issquare(M-i*i))
+            N+=8;
+    }
+    cout << N<< endl;
+    return 0;
+}
